@@ -10,7 +10,7 @@ author: Wander Zeng #网站作者
 language: zh-Hans #中文
 timezone: Asia/Shanghai
 
-# URL #绑定域名后，欲创建sitemap.xml需要配置该项
+# URL #绑定域名(个人域名)后，欲创建sitemap.xml需要配置该项
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://0613.me #你的域名
 root: / # 可以找到 root 项并修改为 /blog/
