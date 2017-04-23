@@ -8,7 +8,7 @@ subtitle: day day up #副标题
 description: 温故而知新 #给搜索引擎看的，对站点的描述，可以自定义，在生成html中的head->meta中可看到
 author: Wander Zeng #网站作者
 language: zh-Hans #中文
-timezone: 
+timezone: Asia/Shanghai
 
 # URL #绑定域名后，欲创建sitemap.xml需要配置该项
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
