@@ -80,3 +80,19 @@ sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
+
+# 新增搜索
+algolia: 
+  applicationID: L34XZDY661 
+  apiKey: e2f02dacf5ff8155a9f9390f100de654 
+  adminApiKey: 9d90fc74894c4dde5b1447d278466a13 
+  indexName: 42bf5dc7558a177308743da34255dbd4 
+  chunkSize: 5000 
+
+# 设置 RSS
+feed: 
+  type: rss2
+  path: rss2.xml
+  limit: 5
+  hub: 
+  content: 'true'
