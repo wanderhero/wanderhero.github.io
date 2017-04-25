@@ -4,9 +4,9 @@
 
 # Site # 整站的基本信息
 title: Wander's Blog #网站标题
-subtitle: day day up #副标题
-description: 温故而知新 #给搜索引擎看的，对站点的描述，可以自定义，在生成html中的head->meta中可看到
-author: Wander Zeng #网站作者
+subtitle: 温故而知新 #副标题
+description: 说事实 讲道理 有图有真相 #给搜索引擎看的，对站点的描述，可以自定义，在生成html中的head->meta中可看到
+author: Wander.Zeng #网站作者
 language: zh-Hans #中文
 timezone: Asia/Shanghai
 
@@ -96,3 +96,11 @@ feed:
   limit: 5
   hub: 
   content: 'true'
+
+# 修改启动端口
+server: 
+  port: 5000
+  log: false
+  ip: 0.0.0.0
+  compress: false
+  header: true
