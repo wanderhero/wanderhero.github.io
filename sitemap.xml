@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://0613.me/2017/04/14/hello-world/</loc>
+    
+    <lastmod>2017-04-25T00:06:17.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://0613.me/tags/index.html</loc>
     
     <lastmod>2017-04-24T13:26:15.000Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>http://0613.me/baidu_verify_VTWTHchhbJ.html</loc>
     
     <lastmod>2017-04-16T15:42:04.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://0613.me/2017/04/14/hello-world/</loc>
-    
-    <lastmod>2017-04-14T03:42:53.000Z</lastmod>
     
   </url>
   
