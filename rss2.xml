@@ -8,13 +8,13 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>说事实 讲道理 有图有真相</description>
-    <pubDate>Sat, 29 Apr 2017 15:13:14 GMT</pubDate>
+    <pubDate>Sat, 29 Apr 2017 15:35:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>Hello World</title>
-      <link>http://0613.me/2017/04/14/hello-world/</link>
-      <guid>http://0613.me/2017/04/14/hello-world/</guid>
+      <title>Hello World - Hexo</title>
+      <link>http://0613.me/2017/04/14/hello-world-hexo/</link>
+      <guid>http://0613.me/2017/04/14/hello-world-hexo/</guid>
       <pubDate>Fri, 14 Apr 2017 03:42:53 GMT</pubDate>
       <description>
       
@@ -37,7 +37,7 @@
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 ]]></content:encoded>
       
-      <comments>http://0613.me/2017/04/14/hello-world/#disqus_thread</comments>
+      <comments>http://0613.me/2017/04/14/hello-world-hexo/#disqus_thread</comments>
     </item>
     
   </channel>
