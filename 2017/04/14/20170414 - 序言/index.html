@@ -494,15 +494,15 @@
     </button>
     <div id="QR" style="display: none;">
       
-        <div id="wechat" style="display: inline-block">
-          <img id="wechat_qr" src="http://wander.u.qiniudn.com/wechatpay.png" alt="Wander.Zeng WeChat Pay"/>
-          <p>微信打赏</p>
-        </div>
-      
-      
         <div id="alipay" style="display: inline-block">
           <img id="alipay_qr" src="http://wander.u.qiniudn.com/ali_pay.png" alt="Wander.Zeng Alipay"/>
           <p>支付宝打赏</p>
+        </div>
+      
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://wander.u.qiniudn.com/wechatpay.png" alt="Wander.Zeng WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
       
     </div>
@@ -1041,6 +1041,21 @@
 
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   
