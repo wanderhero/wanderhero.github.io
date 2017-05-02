@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[Hello World - Hexo]]></title>
+      <url>/2017/04/30/20170430%20-%20hello-world-hexo/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 博客 </category>
+            
+            <category> 搭建 </category>
+            
+            <category> Hexo </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> blog </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> Hello World </tag>
+            
+            <tag> 命令行 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[博客搭建之Hexo系列]]></title>
+      <url>/2017/04/30/20170430%20-%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%20Hexo%20%E7%B3%BB%E5%88%97/</url>
+      <content type="html"><![CDATA[<p>其实每一项网上多找找都可以找到相应的文章，我也是借鉴了各种前人的总结才搭建出来的，但是把自己的结果整理出来比参考他人更花时间和精力。在学习中也发现了一些过时或不正确的内容，这里只记录真正实现过的功能，这也算是本博客的特色，给看的人负责，也是对自己的回顾。<br><a id="more"></a><br>已完成  </p>
+<p>未完成</p>
+<ul>
+<li>选择 Hexo 搭建个人博客 </li>
+<li>安装 Hexo 前准备 Node.js  </li>
+<li>安装 Hexo 前准备 Git  </li>
+<li>Hexo 初体验 </li>
+<li>Hexo 主题</li>
+<li>绑定域名  </li>
+<li>网站收录    </li>
+<li>公益404   </li>
+<li>站内搜索  </li>
+<li>评论系统  </li>
+<li>访问统计  </li>
+<li>分享功能 </li>
+<li>RSS     </li>
+<li>捐赠  </li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 博客 </category>
+            
+            <category> 搭建 </category>
+            
+            <category> Hexo </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> blog </tag>
+            
+            <tag> 搭建 </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> 系列 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[序言]]></title>
+      <url>/2017/04/14/20170414%20-%20%E5%BA%8F%E8%A8%80/</url>
+      <content type="html"><![CDATA[<p>开始入博客的坑，比想象中的难多了，光博客的搭建就可以写个系列了，至于能坚持多久，就让时间来验证吧，回顾过去，做好当前，展望未来足以。<br><a id="more"></a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 杂谈 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 杂谈 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
+</search>
