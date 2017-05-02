@@ -4,37 +4,37 @@
 
 # Site # 整站的基本信息
 title: Wander's Blog #网站标题
-subtitle: 温故而知新 #副标题
-description: 说事实 讲道理 有图有真相 #给搜索引擎看的，对站点的描述，可以自定义，在生成html中的head->meta中可看到
+subtitle: 温故而知新 #网站副标题
+description: 说事实 讲道理 有图有真相 #网站描述，给搜索引擎看的，在生成html中的head->meta中可看到
 author: Wander.Zeng #网站作者
-language: zh-Hans #中文
-timezone: Asia/Shanghai
+language: zh-Hans #网站使用的语言
+timezone: Asia/Shanghai #网站时区。Hexo 预设使用您电脑的时区
 
 # URL #绑定域名(个人域名)后，欲创建sitemap.xml需要配置该项
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://0613.me #你的域名
-root: / # 可以找到 root 项并修改为 /blog/
-permalink: :year/:month/:day/:title/
-permalink_defaults:
+root: / ##网站根目录，可以自定义如/blog/
+permalink: :year/:month/:day/:title/ #文章的永久链接
+permalink_defaults: #永久链接中各部分的默认值
 
 # Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
+source_dir: source #资源文件夹，这个文件夹用来存放内容。默认值是source
+public_dir: public #公共文件夹，这个文件夹用于存放生成的站点文件。默认值是public
+tag_dir: tags #标签文件夹。默认值是tags
+archive_dir: archives #归档文件夹。默认值是archives
+category_dir: categories #分类文件夹。默认值是categories
+code_dir: downloads/code #默认值是downloads/code
+i18n_dir: :lang #国际化文件夹。默认值:lang
+skip_render: # 跳过指定文件的渲染
 
 # Writing #文章布局、写作格式的定义，不修改
-new_post_name: :title.md # File name of new posts
-default_layout: post
+new_post_name: :title.md # 新文章的文件名称
+default_layout: post #预设布局
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
-filename_case: 0
-render_drafts: false
-post_asset_folder: false
+external_link: true # 在新标签中打开链接
+filename_case: 0 #把文件名称转换为小写或大写
+render_drafts: false #显示草稿
+post_asset_folder: false #启动 Asset 文件夹
 relative_link: false
 future: true
 highlight: #代码高亮
@@ -44,9 +44,9 @@ highlight: #代码高亮
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
+default_category: uncategorized #默认分类
+category_map: #分类别名
+tag_map: #标签别名
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -57,13 +57,13 @@ time_format: HH:mm:ss
 
 # Pagination #每页显示文章数，可以自定义
 ## Set per_page to 0 to disable pagination
-per_page: 10 #每页显示10篇文章
-pagination_dir: page
+per_page: 10 #每页显示的文章量 (0 = 关闭分页功能)
+pagination_dir: page #分页目录
 
 # Extensions #这里配置站点所用主题和插件
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: next #当前主题名称
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -91,9 +91,9 @@ algolia:
 
 # 设置 RSS
 feed: 
-  type: rss2
-  path: rss2.xml
-  limit: 5
+  type: feed
+  path: feed.xml
+  limit: 20
   hub: 
   content: 'true'
 
