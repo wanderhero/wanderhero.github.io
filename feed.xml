@@ -5,7 +5,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="http://0613.me/"/>
-  <updated>2017-04-30T13:47:40.000Z</updated>
+  <updated>2017-05-08T14:52:18.000Z</updated>
   <id>http://0613.me/</id>
   
   <author>
@@ -14,6 +14,65 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IntelliJ IDEA For Mac 导入导出快捷键配置</title>
+    <link href="http://0613.me/2017/05/05/20170505%20-%20IntelliJ-IDEA-For-Mac-%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%85%8D%E7%BD%AE/"/>
+    <id>http://0613.me/2017/05/05/20170505 - IntelliJ-IDEA-For-Mac-导入导出快捷键配置/</id>
+    <published>2017-05-05T06:03:18.000Z</published>
+    <updated>2017-05-08T14:52:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li><p><span id="参考0">点击顶部的 <strong>File</strong>，选择 <strong>Export Settings…</strong>；</span><br><a href="http://wander.u.qiniudn.com/20170505-1403-0.0.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-0.0.png?imageView2/2/h/100/imageslim" alt=""></a></p>
+</li>
+<li><p>默认选择的应该就是 <strong>当前 IntelliJ IDEA 版本所在的配置路径</strong>；<br><a href="http://wander.u.qiniudn.com/20170505-1403-1.0.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-1.0.png?imageView2/2/h/100/imageslim" alt=""></a><br>[不对看这里]如果不是，就选择 <strong>…</strong> 即更多文件，选择 <strong>Recent Flaces</strong> 即最近使用，选择你所使用的 IntelliJIdea 版本；<br><a href="http://wander.u.qiniudn.com/20170505-1403-1.1.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-1.1.png?imageView2/2/h/100/imageslim" alt=""></a></p>
+</li>
+<li><p>点击 <strong>OK</strong>，如果是第一次 Export，会提示 <strong>Export Complete</strong>，此时不要急着 <strong>Cancel</strong>，而是选择 <strong>Reveal in Finder</strong>；<br><a href="http://wander.u.qiniudn.com/20170505-1403-2.1.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-2.1.png?imageView2/2/h/100/imageslim" alt=""></a><br>[不对看这里]如果不是第一次，则会提示 <strong>File Already Exists</strong>，其实就是该文件已存在，无脑点击 <strong>OK</strong> 即可，后面就是老司机上路了；<br><a href="http://wander.u.qiniudn.com/20170505-1403-2.0.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-2.0.png?imageView2/2/h/100/imageslim" alt=""></a></p>
+</li>
+<li><p>在打开的文件里找到 <strong>keymaps</strong> 目录，你想要的 <strong>快捷键配置</strong> 文件就静静地躺在那里，特别提醒，<strong>对里面的文件删除或添加，都需要重启 IDEA 才能生效，</strong>enjoy it 吧~<br><a href="http://wander.u.qiniudn.com/20170505-1403-3.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-3.png?imageView2/2/h/100/imageslim" alt=""></a></p>
+<a id="more"></a>
+</li>
+</ul>
+<hr>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>&emsp;&emsp;虽然用的最习惯的还是 eclipse，尤其是 MyEclipse，但由于 JetBrains 成功的商业模式，把各个工具的操作都统一了，大势所趋，IntelliJ IDEA 成了新宠。我还不是很熟悉这个新伙伴，今天遇到要把快捷键设置导出的问题就一下子难到了。本以为谷歌在手，天下我有，结果搜了一通，要么是 Windows 版的，要么就是风马牛不相及的快捷键使用说明，竟然没有我大 Mac 的文章，那就让我来献个丑吧~</p>
+<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>&emsp;&emsp;前面提到，我已经找到了 <a href="http://blog.csdn.net/jiangfuqiang/article/details/38553011" target="_blank" rel="external">Windows</a> 的方法（<a href="#参考1">见参考</a>），那举一反三，Mac 上的位置呼之欲出。<br>&emsp;&emsp;Windows 下 IDEA 默认快捷键的配置文件所在地（目录前缀自己改）：C:\Program Files (x86)\JetBrains\IntelliJ IDEA xxx\lib\resources.jar\idea\KeyMap_xxx.xml，很显然，Mac 下肯定在 <strong>IntelliJ IDEA.app</strong> 的 <strong>包内容</strong> 里，<a href="http://wander.u.qiniudn.com/20170505-1403-4.0.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-4.0.png?imageView2/2/h/100/imageslim" alt=""></a><strong>resources.jar</strong> 包是顺利找到了，<a href="http://wander.u.qiniudn.com/20170505-1403-4.1.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-4.1.png?imageView2/2/h/100/imageslim" alt=""></a> 但通过 <strong>JD-GUI</strong> 查看了下，可能是版本的问题， <strong>idea</strong> 目录下并没有和 <strong>KeyMap</strong> 有关的文件，而是在同级的 <strong>keymaps</strong> 目录下，和 <strong>偏好设置</strong> 里的 <strong>Keymap</strong> 的设置可以对应起来，说明 默认快捷键的配置 找对了。<br><a href="http://wander.u.qiniudn.com/20170505-1403-4.2.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-4.2.png?imageView2/2/h/100/imageslim" alt=""></a><a href="http://wander.u.qiniudn.com/20170505-1403-4.3.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-4.3.png?imageView2/2/h/100/imageslim" alt=""></a><br>&emsp;&emsp;看了半天，我自定义的快捷键在哪里，这才是重点。Windows 下 IDEA 用户自定义快捷键的配置文件所在地（目录前缀自己改）：C:\Users\Administrator.IntelliJIdea13\config\keymaps*.xml，但 Mac 下的配置放在哪呢，这就比较尴尬了，只能退而求其次，先找下 IntelliJ IDEA For Mac 的配置文件保存路径吧，这就很多了，感谢<a href="http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/installation-directory-introduce.html" target="_blank" rel="external">万能的 Google，无私的网友</a>（<a href="#参考2">见参考</a>），/Users/你的用户名/Library/Preferences/IntelliJIdeaXXXXXX，用于保存你的个人配置，等价于 Windows 下的 config 目录，接下来，不管用 <strong>终端</strong> 还是 <strong>前往文件夹…</strong> 都可以，你喜欢就好。<br><a href="http://wander.u.qiniudn.com/20170505-1403-5.0.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-5.0.png?imageView2/2/h/100/imageslim" alt=""></a><a href="http://wander.u.qiniudn.com/20170505-1403-5.1.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-5.1.png?imageView2/2/h/100/imageslim" alt=""></a><br>&emsp;&emsp;最后，感谢好友 <strong>Stephen</strong> 抛来的问题，又自己找到了<a href="#参考0">最上面所说的最正常最方便的正解</a>，还分享了丰富的<a href="http://color-themes.com/?view=index" target="_blank" rel="external">颜色主题 Color Themes</a>（<a href="#参考3">见参考</a>），下载喜欢的主题，其实就是 jar 包，通过 <strong>Import Settings…</strong> 导入即可，如果想极客一点，可以把 jar 包解包，把文件放到对应的目录下即可。</p>
+<h3 id="题外话：保存快捷键配置"><a href="#题外话：保存快捷键配置" class="headerlink" title="题外话：保存快捷键配置"></a>题外话：保存快捷键配置</h3><p>&emsp;&emsp;喜欢的快捷键要好好珍惜，我选择 GitHub 来装逼，<a href="https://github.com/wanderhero/config/blob/master/IntelliJ%20IDEA/keymaps/custom%20Mac%20OS%20X%2010_5_.xml" target="_blank" rel="external"><strong>https://github.com/wanderhero/config.git</strong></a>，其实我就把 <strong>代码补全(Main menu –&gt; Code –&gt; Completion)</strong> 的快捷键改成了 <strong>Alt + 斜杠(⌥/)</strong>，符合国情~</p>
+<h3 id="吐槽一下"><a href="#吐槽一下" class="headerlink" title="吐槽一下"></a>吐槽一下</h3><p>&emsp;&emsp;IntelliJ IDEA 要是能在 快捷键配置 界面添加 导入 和 导出 按钮多方便，既然没有，就 PS 下 YY 下吧~<br><a href="http://wander.u.qiniudn.com/20170505-1403-6.1.png?imageslim" target="_blank" rel="external"><img src="http://wander.u.qiniudn.com/20170505-1403-6.1.png?imageView2/2/h/100/imageslim" alt=""></a><br>&emsp;&emsp;对比了下 Eclipse，其实 Eclipse 提供了导出快捷键设置的按钮，可以将当前 Eclipse 中所有快捷键设置导出到一个 csv 格式的文件中，却没有导入按钮。为什么以前用 Eclipse 没注意到这点，到了 IntelliJ IDEA 却需要呢，归根结底还是 IntelliJ IDEA 的快捷键需要换的缘故，虽然这东西是舶来品，但既然无法改变别人，那只能改变自己了~</p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li><span id="参考1"><a href="http://blog.csdn.net/jiangfuqiang/article/details/38553011" target="_blank" rel="external">jiangfuqiang的专栏 - 完整导出IntelliJ IDEA的快捷键</a>，其他几篇跟博主一模一样的文章应该都是 copy 的</span>  </li>
+<li><span id="参考2"><a href="http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/installation-directory-introduce.html" target="_blank" rel="external">极客学院的IntelliJ IDEA 相关核心文件和目录介绍之Mac 的配置文件保存路径</a></span>  </li>
+<li><span id="参考3"><a href="http://color-themes.com/?view=index" target="_blank" rel="external">Color Themes - 多彩主题</a></span>  </li>
+</ul>
+<div class="note danger"><p><strong>版权声明：</strong> 本文章转载请注明出处！ </p>
+</div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;span id=&quot;参考0&quot;&gt;点击顶部的 &lt;strong&gt;File&lt;/strong&gt;，选择 &lt;strong&gt;Export Settings…&lt;/strong&gt;；&lt;/span&gt;&lt;br&gt;&lt;a href=&quot;http://wander.u.qiniudn.com/20170505-1403-0.0.png?imageslim&quot;&gt;&lt;img src=&quot;http://wander.u.qiniudn.com/20170505-1403-0.0.png?imageView2/2/h/100/imageslim&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;默认选择的应该就是 &lt;strong&gt;当前 IntelliJ IDEA 版本所在的配置路径&lt;/strong&gt;；&lt;br&gt;&lt;a href=&quot;http://wander.u.qiniudn.com/20170505-1403-1.0.png?imageslim&quot;&gt;&lt;img src=&quot;http://wander.u.qiniudn.com/20170505-1403-1.0.png?imageView2/2/h/100/imageslim&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;br&gt;[不对看这里]如果不是，就选择 &lt;strong&gt;…&lt;/strong&gt; 即更多文件，选择 &lt;strong&gt;Recent Flaces&lt;/strong&gt; 即最近使用，选择你所使用的 IntelliJIdea 版本；&lt;br&gt;&lt;a href=&quot;http://wander.u.qiniudn.com/20170505-1403-1.1.png?imageslim&quot;&gt;&lt;img src=&quot;http://wander.u.qiniudn.com/20170505-1403-1.1.png?imageView2/2/h/100/imageslim&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击 &lt;strong&gt;OK&lt;/strong&gt;，如果是第一次 Export，会提示 &lt;strong&gt;Export Complete&lt;/strong&gt;，此时不要急着 &lt;strong&gt;Cancel&lt;/strong&gt;，而是选择 &lt;strong&gt;Reveal in Finder&lt;/strong&gt;；&lt;br&gt;&lt;a href=&quot;http://wander.u.qiniudn.com/20170505-1403-2.1.png?imageslim&quot;&gt;&lt;img src=&quot;http://wander.u.qiniudn.com/20170505-1403-2.1.png?imageView2/2/h/100/imageslim&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;br&gt;[不对看这里]如果不是第一次，则会提示 &lt;strong&gt;File Already Exists&lt;/strong&gt;，其实就是该文件已存在，无脑点击 &lt;strong&gt;OK&lt;/strong&gt; 即可，后面就是老司机上路了；&lt;br&gt;&lt;a href=&quot;http://wander.u.qiniudn.com/20170505-1403-2.0.png?imageslim&quot;&gt;&lt;img src=&quot;http://wander.u.qiniudn.com/20170505-1403-2.0.png?imageView2/2/h/100/imageslim&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在打开的文件里找到 &lt;strong&gt;keymaps&lt;/strong&gt; 目录，你想要的 &lt;strong&gt;快捷键配置&lt;/strong&gt; 文件就静静地躺在那里，特别提醒，&lt;strong&gt;对里面的文件删除或添加，都需要重启 IDEA 才能生效，&lt;/strong&gt;enjoy it 吧~&lt;br&gt;&lt;a href=&quot;http://wander.u.qiniudn.com/20170505-1403-3.png?imageslim&quot;&gt;&lt;img src=&quot;http://wander.u.qiniudn.com/20170505-1403-3.png?imageView2/2/h/100/imageslim&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="IDE" scheme="http://0613.me/categories/IDE/"/>
+    
+      <category term="IntelliJ IDEA" scheme="http://0613.me/categories/IDE/IntelliJ-IDEA/"/>
+    
+    
+      <category term="IDE" scheme="http://0613.me/tags/IDE/"/>
+    
+      <category term="IntelliJ IDEA" scheme="http://0613.me/tags/IntelliJ-IDEA/"/>
+    
+      <category term="快捷键" scheme="http://0613.me/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+      <category term="配置" scheme="http://0613.me/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World - Hexo</title>
@@ -67,9 +126,9 @@
     <link href="http://0613.me/2017/04/30/20170430%20-%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%20Hexo%20%E7%B3%BB%E5%88%97/"/>
     <id>http://0613.me/2017/04/30/20170430 - 博客搭建之 Hexo 系列/</id>
     <published>2017-04-30T13:38:38.000Z</published>
-    <updated>2017-05-05T05:38:14.000Z</updated>
+    <updated>2017-05-05T09:43:39.000Z</updated>
     
-    <content type="html"><![CDATA[<p>其实每一项网上多找找都可以找到相应的文章，我也是借鉴了各种前人的总结才搭建出来的，但是把自己的结果整理出来比参考他人更花时间和精力。在学习中也发现了一些过时或不正确的内容，这里只记录真正实现过的功能，这也算是本博客的特色，给看的人负责，也是对自己的回顾。<br><a id="more"></a><br>已完成  </p>
+    <content type="html"><![CDATA[<p>&emsp;&emsp;其实每一项网上多找找都可以找到相应的文章，我也是借鉴了各种前人的总结才搭建出来的，但是把自己的结果整理出来比参考他人更花时间和精力。在学习中也发现了一些过时或不正确的内容，这里只记录真正实现过的功能，这也算是本博客的特色，给看的人负责，也是对自己的回顾。<br><a id="more"></a><br>已完成  </p>
 <p>未完成</p>
 <ul>
 <li>选择 Hexo 搭建个人博客 </li>
@@ -92,7 +151,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;其实每一项网上多找找都可以找到相应的文章，我也是借鉴了各种前人的总结才搭建出来的，但是把自己的结果整理出来比参考他人更花时间和精力。在学习中也发现了一些过时或不正确的内容，这里只记录真正实现过的功能，这也算是本博客的特色，给看的人负责，也是对自己的回顾。&lt;br&gt;
+      &lt;p&gt;&amp;emsp;&amp;emsp;其实每一项网上多找找都可以找到相应的文章，我也是借鉴了各种前人的总结才搭建出来的，但是把自己的结果整理出来比参考他人更花时间和精力。在学习中也发现了一些过时或不正确的内容，这里只记录真正实现过的功能，这也算是本博客的特色，给看的人负责，也是对自己的回顾。&lt;br&gt;
     
     </summary>
     
@@ -120,14 +179,14 @@
     <link href="http://0613.me/2017/04/14/20170414%20-%20%E5%BA%8F%E8%A8%80/"/>
     <id>http://0613.me/2017/04/14/20170414 - 序言/</id>
     <published>2017-04-13T16:00:00.000Z</published>
-    <updated>2017-05-01T01:13:04.000Z</updated>
+    <updated>2017-05-05T06:32:12.000Z</updated>
     
-    <content type="html"><![CDATA[<p>开始入博客的坑，比想象中的难多了，光博客的搭建就可以写个系列了，至于能坚持多久，就让时间来验证吧，回顾过去，做好当前，展望未来足以。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p>&emsp;&emsp;开始入博客的坑，比想象中的难多了，光博客的搭建就可以写个系列了，至于能坚持多久，就让时间来验证吧，回顾过去，做好当前，展望未来足以。<br>&emsp;&emsp;这是一个信息爆炸的时代，也充斥着各种混淆视听的内容，我想把最关键的东西写在最前面，让看到文章的读者能够快速辨别这篇文章对他有没有用，至于后面的散文诗，算是一个历史的积累吧。<br><a id="more"></a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;开始入博客的坑，比想象中的难多了，光博客的搭建就可以写个系列了，至于能坚持多久，就让时间来验证吧，回顾过去，做好当前，展望未来足以。&lt;br&gt;
+      &lt;p&gt;&amp;emsp;&amp;emsp;开始入博客的坑，比想象中的难多了，光博客的搭建就可以写个系列了，至于能坚持多久，就让时间来验证吧，回顾过去，做好当前，展望未来足以。&lt;br&gt;&amp;emsp;&amp;emsp;这是一个信息爆炸的时代，也充斥着各种混淆视听的内容，我想把最关键的东西写在最前面，让看到文章的读者能够快速辨别这篇文章对他有没有用，至于后面的散文诗，算是一个历史的积累吧。&lt;br&gt;
     
     </summary>
     
