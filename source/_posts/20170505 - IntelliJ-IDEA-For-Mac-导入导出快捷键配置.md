@@ -4,7 +4,7 @@ categories: [IDE,IntelliJ IDEA]
 tags: [IDE,IntelliJ IDEA,快捷键,配置]  
 date: 2017-05-05 14:03:18  
 ---
-&emsp;&emsp;本人用的是 ```IntelliJ IDEA 2017.1.1``` 版本。
+&emsp;&emsp;本文用的是 ```IntelliJ IDEA 2017.1.1``` 版本。
 - <span id="参考0">点击顶部的 **File**，选择 **Export Settings...**；</span>
 [![](http://wander.u.qiniudn.com/20170505-1403-0.0.png?imageView2/2/h/100/imageslim)](http://wander.u.qiniudn.com/20170505-1403-0.0.png?imageslim)
 
