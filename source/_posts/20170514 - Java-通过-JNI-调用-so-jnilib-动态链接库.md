@@ -179,7 +179,7 @@ Exception in thread "main" java.lang.UnsatisfiedLinkError: no JNITest1 in java.l
 	at java.lang.System.loadLibrary(System.java:1088)
 	at com.wander.jni.JNITest.<clinit>(JNITest.java:5)
 ```
-&emsp;&emsp;一般在类的静态 (static) 代码块中加载动态库最合适，因为在创建类的实例时，类会被 ClassLoader 先加载到虚拟机，随后立马调用类的 static 静态代码块。这时再去调用 native 方法就万无一失了。加载动态库的两种方式：
+&emsp;&emsp;一般在类的静态 (static) 代码块中加载动态库最合适，因为在创建类的实例时，类会被 ClassLoader 先加载到虚拟机，随后立马调用类的 static 静态代码块。这时再去调用 native 方法就万无一失了。加载动态库的两种方式：  
 &emsp;&emsp;方法1简单粗暴，指定要调用的动态链接库的绝对路径即可，只是在跨平台访问时，需要指定对应平台的文件路径，且不同平台文件的前缀和后缀都不一样；
 ``` bash
 System.load("/Users/wander/MyDocuments/workspace/workspace4eclipse/test-normal-project/res/jni/libJNITest.jnilib");
