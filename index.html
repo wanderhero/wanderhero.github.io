@@ -353,6 +353,189 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://0613.me/2017/05/19/20170519 - 通过-Java-实现-pcm-格式-转-wav-格式并分别通过-Swing-和-Web-的形式绘制波形图/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wander.Zeng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://wander.u.qiniudn.com/avatar.png?imageslim">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wander's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/05/19/20170519 - 通过-Java-实现-pcm-格式-转-wav-格式并分别通过-Swing-和-Web-的形式绘制波形图/" itemprop="url">
+                  使用 Java 实现 PCM 格式 转 WAV 格式并分别通过 Swing 和 Web 的形式绘制波形图
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-19T18:12:10+08:00">
+                2017-05-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Audio/" itemprop="url" rel="index">
+                    <span itemprop="name">Audio</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Audio/Wave/" itemprop="url" rel="index">
+                    <span itemprop="name">Wave</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/05/19/20170519 - 通过-Java-实现-pcm-格式-转-wav-格式并分别通过-Swing-和-Web-的形式绘制波形图/" class="leancloud_visitors" data-flag-title="使用 Java 实现 PCM 格式 转 WAV 格式并分别通过 Swing 和 Web 的形式绘制波形图">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <ul>
+<li>使用 Java 实现 pcm 格式 转 wav 格式，具体查看<a href="https://github.com/wanderhero/test-normal-maven/tree/master/src/main/java/com/wander/wave/pcm">https://github.com/wanderhero/test-normal-maven/tree/master/src/main/java/com/wander/wave/pcm</a></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">package com.wander.wave.pcm;</div><div class="line"></div><div class="line">import java.io.FileInputStream;</div><div class="line">import java.io.FileOutputStream;</div><div class="line"></div><div class="line">public class PcmToWavUtil &#123;</div><div class="line"></div><div class="line">    public static void convert(String src, String target) throws Exception &#123;</div><div class="line">        FileInputStream fis = new FileInputStream(src);</div><div class="line">        FileOutputStream fos = new FileOutputStream(target);</div><div class="line"></div><div class="line">        // 计算长度</div><div class="line">        int pcmSize = fis.available();// 由于音频文件一般不会大于 Int 最大值，所以使用 available</div><div class="line"></div><div class="line">        // 填入参数，比特率等等。这里用的是 16位 单声道 8000 hz</div><div class="line">        WavHeader header = new WavHeader();</div><div class="line">        // 长度字段 = 内容的大小（PCMSize) + 头部字段的大小(不包括前面4字节的标识符RIFF以及fileLength本身的4字节)</div><div class="line">        header.fileLength = pcmSize + (44 - 8);</div><div class="line">        header.fmtHdrLeth = 16;</div><div class="line">        header.bitsPerSample = 16;</div><div class="line">        header.channels = 1;</div><div class="line">        header.formatTag = 0x0001;</div><div class="line">        header.samplesPerSec = 8000;</div><div class="line">        header.blockAlign = (short) (header.channels * header.bitsPerSample / 8);</div><div class="line">        header.avgBytesPerSec = header.blockAlign * header.samplesPerSec;</div><div class="line">        header.dataHdrLeth = pcmSize;</div><div class="line"></div><div class="line">        byte[] h = header.getHeader();</div><div class="line"></div><div class="line">        assert h.length == 44;// WAV标准，头部应该是44字节</div><div class="line">        // write header</div><div class="line">        fos.write(h, 0, h.length);</div><div class="line">        // write data stream</div><div class="line">        byte[] buf = new byte[1024 * 4];</div><div class="line">        int size = fis.read(buf);</div><div class="line">        <span class="keyword">while</span> (size != -1) &#123;</div><div class="line">            fos.write(buf, 0, size);</div><div class="line">            size = fis.read(buf);</div><div class="line">        &#125;</div><div class="line">        fis.close();</div><div class="line">        fos.close();</div><div class="line">        System.out.println(<span class="string">"Convert OK!"</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/19/20170519 - 通过-Java-实现-pcm-格式-转-wav-格式并分别通过-Swing-和-Web-的形式绘制波形图/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://0613.me/2017/05/14/20170514 - Java-通过-JNI-调用-so-jnilib-动态链接库/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1256,7 +1439,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1267,7 +1450,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1278,7 +1461,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
