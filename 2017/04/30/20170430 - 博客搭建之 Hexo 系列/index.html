@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="博客,blog,搭建,hexo,系列," />
+  <meta name="keywords" content="博客,blog,hexo,搭建,系列," />
 
 
 
@@ -90,7 +90,7 @@
 
 
 <meta name="description" content="&amp;emsp;&amp;emsp;其实每一项网上多找找都可以找到相应的文章，我也是借鉴了各种前人的总结才搭建出来的，但是把自己的结果整理出来比参考他人更花时间和精力。在学习中也发现了一些过时或不正确的内容，这里只记录真正实现过的功能，这也算是本博客的特色，给看的人负责，也是对自己的回顾。">
-<meta name="keywords" content="博客,blog,搭建,hexo,系列">
+<meta name="keywords" content="博客,blog,hexo,搭建,系列">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客搭建之Hexo系列">
 <meta property="og:url" content="http://0613.me/2017/04/30/20170430 - 博客搭建之 Hexo 系列/index.html">
@@ -448,14 +448,15 @@
           
             
               <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a class="cloud-tie-join-count" href="/2017/04/30/20170430 - 博客搭建之 Hexo 系列/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count join-count" itemprop="commentCount"></span>
-                </a>
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
               </span>
+              
+                <a href="/2017/04/30/20170430 - 博客搭建之 Hexo 系列/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/04/30/20170430 - 博客搭建之 Hexo 系列/" itemprop="commentsCount"></span>
+                </a>
+              
             
           
 
@@ -582,9 +583,9 @@
           
             <a href="/tags/blog/" rel="tag"># blog</a>
           
-            <a href="/tags/搭建/" rel="tag"># 搭建</a>
-          
             <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/搭建/" rel="tag"># 搭建</a>
           
             <a href="/tags/系列/" rel="tag"># 系列</a>
           
@@ -675,7 +676,7 @@
           
   <div class="comments" id="comments">
     
-      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+      <div id="SOHUCS"></div>
     
   </div>
 
@@ -823,7 +824,8 @@
   <span class="with-love">
     <i class="fa fa-user-circle-o"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Wander.Zeng</span>
+  <span style="margin-right: 10px;" class="author" itemprop="copyrightHolder">Wander.Zeng</span>
+  |<a style="margin-left: 10px;" href="http://www.miitbeian.gov.cn/">浙ICP备17021839号</a>
 </div>
 
 
@@ -837,12 +839,6 @@
     NexT.Mist
   </a>
 </div>
-
-<!--
-<div>
-  备案信息：xxxxxx
-<div>
--->
 
 
         
@@ -964,24 +960,36 @@
 
 
   
-    
-    <script>
-      var cloudTieConfig = {
-        url: document.location.href, 
-        sourceId: "",
-        productKey: "a734cf112f254ea89b64158bf1589af0",
-        target: "cloud-tie-wrapper"
-      };
-    </script>
-    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
+
+
+
+
+
   
 
 
 
 
 
+  
 
 
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cyt2hHQ2h';
+      var conf = '5da92ee22cc5141017c67f3c7b985f8c';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
 
 
 
